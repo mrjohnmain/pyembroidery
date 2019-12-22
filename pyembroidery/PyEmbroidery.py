@@ -755,6 +755,11 @@ def write_txt(pattern, stream, settings=None):
     write_embroidery(TxtWriter, pattern, stream, settings)
 
 
+def write_json(pattern, stream, settings=None):
+    """Writes fileobject as JSON file"""
+    write_embroidery(JsonWriter, pattern, stream, settings)
+
+
 def write_gcode(pattern, stream, settings=None):
     """Writes fileobject as Gcode file"""
     write_embroidery(GcodeWriter, pattern, stream, settings)
